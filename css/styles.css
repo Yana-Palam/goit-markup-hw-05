@@ -56,7 +56,7 @@ a {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -113,7 +113,7 @@ a {
 
 .card-set-item {
   flex-basis: calc(
-    (100% - ((var(--card-item)-1)) * var(--card-gap)) / var(--card-item)
+    ((100% - (var(--card-item) - 1) * var(--card-gap))) / var(--card-item)
   );
 }
 
@@ -158,10 +158,12 @@ a {
   fill: #ffffff;
 }
 /* ------------------------Хедер---------------------------- */
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .header .container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .header .logo {
@@ -180,7 +182,7 @@ a {
 .nav-list,
 .contacts-list {
   display: flex;
-  gap: var(--card-gap);
+  gap: 50px;
 }
 
 .contacts-list {
@@ -302,10 +304,12 @@ a {
 }
 
 .features-wrap-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
   background-color: var(--secondary-bg-color);
   border-radius: 4px;
-  text-align: center;
 }
 
 .features-icon {
@@ -369,7 +373,10 @@ a {
 }
 
 .team-info {
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .team-item-title {
@@ -397,7 +404,7 @@ a {
 .clients-link {
   transition: color var(--transition);
   display: block;
-  padding: 16px 32px;
+  padding: 16px 31px;
   border: 1px solid;
   border-radius: 4px;
   color: var(--color-icon);
