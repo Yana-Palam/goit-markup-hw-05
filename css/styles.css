@@ -311,14 +311,14 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 270px;
+  height: 120px;
   margin-bottom: 30px;
   background-color: var(--secondary-bg-color);
   border-radius: 4px;
 }
 
 .features-icon {
-  margin-bottom: 25px;
-  margin-top: 25px;
   fill: var(--title-text-color);
 }
 
@@ -452,9 +452,6 @@ a {
 
 .footer-container {
   display: flex;
-}
-
-.footer-contacts-info {
   display: flex;
   align-items: baseline;
 }
